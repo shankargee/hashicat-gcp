@@ -72,6 +72,7 @@ resource "google_compute_instance" "hashicat" {
 
 }
 
+
 resource "null_resource" "configure-cat-app" {
   depends_on = [
     google_compute_instance.hashicat,
